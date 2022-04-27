@@ -8,8 +8,10 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <Layout>
-      test
-      <Link href={'./insta'}>Insta</Link>
+      <div className='flex flex-col'>
+        <Link href={'./insta'}>Insta</Link>
+        <Link href={'./checklist'}>Checklist</Link>
+      </div>
     </Layout>
   )
 }

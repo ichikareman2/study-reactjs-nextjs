@@ -11,7 +11,12 @@
 1. ⬜ WYSIWYG editor (with common formatting styles)
 1. ⬜ Pomodoro
 
-## TODO
+## Project TODO
+* ⬜ checklist
+  * ⬜ add folder and initial files for checklist
+  * ⬜ 
+
+## General TODO
 * ⬜ list of projects - list projects automatically. plan: make a directory and
 read all folders. get index to get name and component?
   * ⬜ 
