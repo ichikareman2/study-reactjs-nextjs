@@ -23,4 +23,5 @@
   * ⬜ 
 * ⬜ add storybook
 * ✅ super simple header  
+* ⬜ add github pipelines to run lint
   
