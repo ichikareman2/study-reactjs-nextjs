@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/node': 17.0.24
+  '@types/ramda': ^0.28.11
   '@types/react': 18.0.5
   '@types/react-dom': 18.0.1
   autoprefixer: ^10.4.4
@@ -9,6 +10,7 @@ specifiers:
   eslint-config-next: 12.1.5
   next: 12.1.5
   postcss: ^8.4.12
+  ramda: ^0.28.0
   react: 18.0.0
   react-dom: 18.0.0
   tailwindcss: ^3.0.24
@@ -16,11 +18,13 @@ specifiers:
 
 dependencies:
   next: 12.1.5_react-dom@18.0.0+react@18.0.0
+  ramda: 0.28.0
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
 
 devDependencies:
   '@types/node': 17.0.24
+  '@types/ramda': 0.28.11
   '@types/react': 18.0.5
   '@types/react-dom': 18.0.1
   autoprefixer: 10.4.4_postcss@8.4.12
@@ -232,6 +236,12 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/ramda/0.28.11:
+    resolution: {integrity: sha512-FG40c+CduBSpGL6gh9M2Ybe+Rhkj/G6HeCnvufO1HbEcnY5fbFfL7EPuj1mXNcEKfxdZw6mRu4cy+GMHen79DQ==}
+    dependencies:
+      ts-toolbelt: 6.15.5
     dev: true
 
   /@types/react-dom/18.0.1:
@@ -1715,6 +1725,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /ramda/0.28.0:
+    resolution: {integrity: sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==}
+    dev: false
+
   /react-dom/18.0.0_react@18.0.0:
     resolution: {integrity: sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==}
     peerDependencies:
@@ -1959,6 +1973,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /ts-toolbelt/6.15.5:
+    resolution: {integrity: sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==}
     dev: true
 
   /tsconfig-paths/3.14.1:

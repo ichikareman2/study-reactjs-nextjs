@@ -14,11 +14,13 @@
 ## Project TODO
 * ⬜ checklist
   * ⬜ add folder and initial files for checklist
-  * ⬜ 
+  * ⬜ add louise as reviewer
+  * ⬜ make added items editable
+  * ⬜ styles
 
 ## General TODO
-* ⬜ list of projects - list projects automatically. plan: make a directory and
-read all folders. get index to get name and component?
+* ⬜ list of projects - list projects automatically. plan: make a list of components with path and name?
   * ⬜ 
+* ⬜ add storybook
 * ✅ super simple header  
   
