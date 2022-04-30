@@ -13,10 +13,11 @@
 
 ## Project TODO
 * ⬜ checklist
-  * ⬜ add folder and initial files for checklist
-  * ⬜ add louise as reviewer
-  * ⬜ make added items editable
-  * ⬜ styles
+  * ✅ add folder and initial files for checklist
+  * ✅ add louise as reviewer
+  * ✅ make added items editable
+  * ✅ add styles 1
+  * ⬜ cancel for mobile (no escape key in onscreen keyboard of mobile)
 
 ## General TODO
 * ⬜ list of projects - list projects automatically. plan: make a list of components with path and name?

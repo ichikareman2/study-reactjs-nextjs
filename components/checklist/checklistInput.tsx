@@ -1,20 +1,23 @@
-import { useState, KeyboardEvent } from 'react'
+import { ChangeEvent, KeyboardEvent } from 'react'
 import { ChecklistItem } from './checklist.model'
 
 export type ChecklistInputProps = {
-  onSubmit: (desc: ChecklistItem['id']) => void
+  onSubmit: () => void
+  value: ChecklistItem['description']
+  onChange: (desc: ChecklistItem['description']) => void
+  onCancel?: () => void
 }
 
-export default function ChecklistInput({onSubmit}: ChecklistInputProps) {
-  const [desc, setDesc] = useState('')
-  const onKeyDown = (e: KeyboardEvent) => {
-    console.log(e, e.key)
-    if(e.key === 'Enter') {onSubmit(desc)}
+export default function ChecklistInput({ onSubmit, value, onChange, onCancel }: ChecklistInputProps) {
+  const handleKeydown = (e: KeyboardEvent) => {
+    if (e.key === 'Enter') { onSubmit() }
+    else if (e.key === 'Escape') { onCancel?.() }
   }
-  return(<>
-    <input type="text" className='w-full'
-      value={desc}
-      onKeyDown={onKeyDown}
-      onChange={(e) => setDesc(e.target.value)}/>
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => onChange(e.currentTarget.value)
+  return (<>
+    <input type="text" className='w-full text-2xl p-3 border border-solid border-sky-300'
+      value={value}
+      onKeyDown={handleKeydown}
+      onChange={handleChange} />
   </>)
 }

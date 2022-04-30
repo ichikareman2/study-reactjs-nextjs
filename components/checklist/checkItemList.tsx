@@ -11,7 +11,7 @@ export default function CheckItemList({list, onUpdate}: CheckItemListProps) {
     <CheckItem item={item} onUpdate={onUpdate} key={item.id}></CheckItem>
   ))
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1 text-2xl">
       {checkItems}
     </div>
   )
