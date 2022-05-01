@@ -1,4 +1,4 @@
-import { ChangeEvent, KeyboardEvent } from 'react'
+import { ChangeEvent, ForwardedRef, forwardRef, KeyboardEvent } from 'react'
 import { ChecklistItem } from './checklist.model'
 
 export type ChecklistInputProps = {
@@ -8,7 +8,7 @@ export type ChecklistInputProps = {
   onCancel?: () => void
 }
 
-export default function ChecklistInput({ onSubmit, value, onChange, onCancel }: ChecklistInputProps) {
+function ChecklistInputRefFn({ onSubmit, value, onChange, onCancel }: ChecklistInputProps, ref: ForwardedRef<HTMLInputElement>) {
   const handleKeydown = (e: KeyboardEvent) => {
     if (e.key === 'Enter') { onSubmit() }
     else if (e.key === 'Escape') { onCancel?.() }
@@ -18,6 +18,10 @@ export default function ChecklistInput({ onSubmit, value, onChange, onCancel }: 
     <input type="text" className='w-full text-2xl p-3 border border-solid border-sky-300'
       value={value}
       onKeyDown={handleKeydown}
-      onChange={handleChange} />
+      onChange={handleChange} 
+      ref={ref}/>
   )
 }
+
+const ChecklistInput = forwardRef(ChecklistInputRefFn)
+export default ChecklistInput
