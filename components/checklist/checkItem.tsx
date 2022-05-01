@@ -9,8 +9,8 @@ export type CheckItemProps = {
   onUpdate: (item: ChecklistItem) => void
 }
 export default function CheckItem({item, onUpdate}: CheckItemProps) {
-  const [editable, setEditable] = useState(false)
-  const [tempDescription, setTempDescription] = useState(item.description)
+  const [editable, setEditable] = useState<boolean>(false)
+  const [tempDescription, setTempDescription] = useState<ChecklistItem['description']>('')
   const textClass = cn({
     'line-through': item.done,
     'text-gray': item.done
@@ -18,7 +18,6 @@ export default function CheckItem({item, onUpdate}: CheckItemProps) {
 
   const updateDesc = () => {
     onUpdate({...item, description: tempDescription})
-    setTempDescription(item.description)
     setEditable(false)
   }
 
@@ -27,10 +26,7 @@ export default function CheckItem({item, onUpdate}: CheckItemProps) {
     setEditable(!editable)
   }
 
-  const handleCancel = () => {
-    setTempDescription(item.description)
-    setEditable(false)
-  }
+  const handleCancel = () => setEditable(false)
 
   return (
     <div className='flex gap-3 items-center'>

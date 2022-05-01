@@ -18,6 +18,12 @@
   * ✅ make added items editable
   * ✅ add styles 1
   * ⬜ cancel for mobile (no escape key in onscreen keyboard of mobile)
+  * ⬜ add demo component. same main component but with data. (to be used for homepage)
+  * ⬜ add way to delete
+  * ⬜ add way to clear done
+  * ⬜ can't edit empty item
+  * ⬜ focus on newly editable item
+  
 
 ## General TODO
 * ⬜ list of projects - list projects automatically. plan: make a list of components with path and name?
@@ -25,4 +31,5 @@
 * ⬜ add storybook
 * ✅ super simple header  
 * ⬜ add github pipelines to run lint
+* ⬜ setup homepage to show all projects
   

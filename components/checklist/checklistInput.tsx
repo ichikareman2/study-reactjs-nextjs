@@ -14,10 +14,10 @@ export default function ChecklistInput({ onSubmit, value, onChange, onCancel }: 
     else if (e.key === 'Escape') { onCancel?.() }
   }
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => onChange(e.currentTarget.value)
-  return (<>
+  return (
     <input type="text" className='w-full text-2xl p-3 border border-solid border-sky-300'
       value={value}
       onKeyDown={handleKeydown}
       onChange={handleChange} />
-  </>)
+  )
 }
