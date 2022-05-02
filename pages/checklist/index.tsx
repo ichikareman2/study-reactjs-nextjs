@@ -1,11 +1,11 @@
 import Checklist from '../../components/checklist/checklist'
 import Layout from '../../components/Layout'
 
-export default function Checlist() {
+export default function ChecklistPage() {
   return (
     <Layout>
       <div className="container mx-auto">
-        <Checklist></Checklist>
+        <Checklist />
       </div>
     </Layout>
   )

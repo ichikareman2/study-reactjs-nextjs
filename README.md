@@ -2,8 +2,8 @@
 
 ## Projects
 1. ⬜ checklist
-1. ⬜ sample IG post with image carousel
 1. ⬜ simple calculator
+1. ⬜ sample IG post with image carousel
 1. ⬜ video player with custom controls
 1. ⬜ traffic light with timer (grin)
 1. ⬜ registration form
@@ -22,8 +22,12 @@
   * ⬜ add way to delete
   * ⬜ add way to clear done
   * ⬜ can't edit empty item
-  * ⬜ focus on newly editable item
-  
+  * ✅ focus on newly editable item
+  * ⬜ animation of rearranging on done
+* ⬜ simple calculator
+  * ⬜ add folder and initial files for calculator
+  * ⬜ determine components by drawing
+  * 
 
 ## General TODO
 * ⬜ list of projects - list projects automatically. plan: make a list of components with path and name?
