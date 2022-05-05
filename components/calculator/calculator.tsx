@@ -1,5 +1,9 @@
+import CalcButtonGroup from './calcButtonGroup';
+
 export default function Calculator() {
   return (
-    <div>calc</div>
+    <div className='flex flex-col'>
+      <CalcButtonGroup />
+    </div>
   )
 }

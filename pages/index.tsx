@@ -11,6 +11,7 @@ const Home: NextPage = () => {
       <div className='flex flex-col'>
         <Link href={'./insta'}>Insta</Link>
         <Link href={'./checklist'}>Checklist</Link>
+        <Link href={'./calculator'}>Calculator</Link>
       </div>
     </Layout>
   )
