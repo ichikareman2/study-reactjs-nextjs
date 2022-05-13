@@ -25,8 +25,10 @@
   * ✅ focus on newly editable item
   * ⬜ animation of rearranging on done
 * ⬜ simple calculator
-  * ⬜ add folder and initial files for calculator
-  * ⬜ determine components by drawing
+  * ✅ add folder and initial files for calculator
+  * ✅ determine components by drawing
+  * ⬜ calculate function
+  * ⬜ 
   * 
 
 ## General TODO
