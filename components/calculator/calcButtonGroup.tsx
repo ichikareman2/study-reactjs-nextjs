@@ -10,7 +10,7 @@ const calcButtonFactory = (value: string, onClick: (e: MouseEvent<HTMLButtonElem
       value={value} key={value}
       onClick={onClick}>{value}</button>
   )
-const keys = 'C789/456x123-.0=+'
+const keys = 'C789/456*123-.0=+'
 export default function CalcButtonGroup({ onCalcBtnClick }: CalcButtonGroupProps) {
   const handleCalcPress = (e: MouseEvent<HTMLButtonElement>) => onCalcBtnClick(e?.currentTarget?.value)
   const buttons = keys.split('').map(k => calcButtonFactory(k, handleCalcPress))
